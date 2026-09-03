@@ -68,7 +68,10 @@
             -webkit-backdrop-filter: blur(12px);
         }
         .text-gradient {
-            color: #059669;
+            background: none !important;
+            -webkit-background-clip: unset !important;
+            -webkit-text-fill-color: #059669 !important;
+            color: #059669 !important;
         }
         .hero-pattern {
             background-image: radial-gradient(rgba(6, 78, 59, 0.04) 1px, transparent 1px);
@@ -81,15 +84,15 @@
 
     <!-- Header / Navbar -->
     <header class="glass-nav text-brand-950 sticky top-0 z-50 border-b border-brand-900/5 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20 sm:h-24">
             <!-- Brand Logo -->
-            <a class="flex items-center gap-3 group" href="index.html">
-                <div class="h-12 w-12 md:h-14 md:w-14 rounded-full border border-brand-900/10 flex items-center justify-center overflow-hidden bg-white shadow-sm shrink-0 group-hover:border-brand-600 transition-colors">
-                    <img src="./assets/logo-nGs2Iwky.png" class="h-full w-full object-contain p-0.5" alt="AXIS EVS Logo" />
+            <a class="flex items-center gap-3 sm:gap-4 group" href="index.html">
+                <div class="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full border-2 border-brand-900/15 flex items-center justify-center overflow-hidden bg-white shadow-md shrink-0 group-hover:border-brand-600 transition-all duration-300">
+                    <img src="./assets/logo-nGs2Iwky.png" class="h-full w-full object-contain" alt="AXIS EVS Logo" />
                 </div>
                 <div class="flex flex-col">
-                    <span class="text-xl md:text-2xl font-extrabold tracking-tight text-brand-950 font-display">AXIS EVS</span>
-                    <span class="text-[10px] tracking-widest uppercase font-semibold text-brand-600 -mt-1">Nutrição & Bem-Estar</span>
+                    <span class="text-xl sm:text-2xl md:text-[26px] font-extrabold tracking-tight text-brand-950 font-display leading-tight">AXIS EVS</span>
+                    <span class="text-[10px] sm:text-[11px] md:text-xs tracking-widest uppercase font-semibold text-brand-600">Nutrição & Bem-Estar</span>
                 </div>
             </a>
 
@@ -125,7 +128,7 @@
                     </div>
 
                     <h1 id="hero-title" class="font-display text-brand-950 font-bold text-3.5xl sm:text-5xl lg:text-[52px] leading-[1.12] tracking-tight">
-                        Seu Corpo em Equilíbrio, Sua Rotina com Mais <span class="text-gradient font-extrabold italic">Energia e Vitalidade!</span>
+                        Seu Corpo em Equilíbrio, Sua Rotina com Mais <span class="text-brand-600 font-extrabold italic" style="color: #059669; background: none; -webkit-text-fill-color: #059669;">Energia e Vitalidade!</span>
                     </h1>
 
                     <p id="hero-desc" class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
@@ -197,7 +200,7 @@
                             Nosso Propósito
                         </div>
                         <h2 class="font-display text-brand-950 font-bold text-3xl sm:text-4xl leading-tight">
-                            Muito Mais que Nutrição: Um Estilo de Vida <span class="text-gradient italic">Ativo e Saudável</span>
+                            Muito Mais que Nutrição: Um Estilo de Vida <span class="text-brand-600 italic" style="color: #059669; background: none; -webkit-text-fill-color: #059669;">Ativo e Saudável</span>
                         </h2>
                         <div id="about-text" class="space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
                             <p>
@@ -428,7 +431,7 @@
                             Sucesso Sustentável
                         </span>
                         <h2 class="font-display text-brand-950 font-bold text-3xl sm:text-4xl leading-tight">
-                            O Acompanhamento Personalizado que <span class="text-gradient italic">Garante o Seu Resultado</span>
+                            O Acompanhamento Personalizado que <span class="text-brand-600 italic" style="color: #059669; background: none; -webkit-text-fill-color: #059669;">Garante o Seu Resultado</span>
                         </h2>
                         <h4 class="text-lg font-semibold text-brand-700">Você nunca mais estará sozinho na sua jornada de bem-estar.</h4>
                         <p class="text-slate-600 text-base leading-relaxed">
@@ -502,7 +505,7 @@
                             Atendimento Presencial
                         </span>
                         <h2 class="font-display text-brand-950 font-bold text-3xl sm:text-4xl">
-                            Venha Nos Visitar no <span class="text-gradient italic">Jardim Satélite</span>
+                            Venha Nos Visitar no <span class="text-brand-600 italic" style="color: #059669; background: none; -webkit-text-fill-color: #059669;">Jardim Satélite</span>
                         </h2>
                         
                         <div class="space-y-4 pt-2">
@@ -608,12 +611,12 @@
     <!-- Footer -->
     <footer class="bg-brand-950 text-white font-sans text-sm border-t border-brand-900 py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-3">
-                <div class="h-10 w-10 rounded-full border border-white/20 flex items-center justify-center overflow-hidden bg-white shrink-0">
-                    <img src="./assets/logo-nGs2Iwky.png" class="h-full w-full object-contain p-0.5" alt="AXIS EVS Logo" />
+            <div class="flex items-center gap-3 sm:gap-4">
+                <div class="h-14 w-14 sm:h-16 sm:w-16 rounded-full border-2 border-white/30 flex items-center justify-center overflow-hidden bg-white shadow-md shrink-0">
+                    <img src="./assets/logo-nGs2Iwky.png" class="h-full w-full object-contain" alt="AXIS EVS Logo" />
                 </div>
                 <div>
-                    <span class="font-display font-bold text-lg text-white">AXIS EVS</span>
+                    <span class="font-display font-bold text-lg sm:text-xl text-white">AXIS EVS</span>
                     <p class="text-xs text-emerald-300/80">Espaço de Vida Saudável — Satélite</p>
                 </div>
             </div>
@@ -625,6 +628,7 @@
                 <a href="https://maps.app.goo.gl/LqK4GHygV2koL99Q9?g_st=ac" target="_blank" class="hover:text-white transition-colors flex items-center gap-1">
                     <span class="material-symbols-outlined text-xs text-emerald-400">pin_drop</span> Como Chegar
                 </a>
+                <a id="footer-instagram" href="https://www.instagram.com/axis_evs" target="_blank" class="hover:text-white transition-colors">Instagram</a>
                 <a href="https://wa.me/5512991055041" target="_blank" class="hover:text-white transition-colors">WhatsApp</a>
             </div>
 

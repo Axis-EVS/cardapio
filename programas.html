@@ -61,7 +61,10 @@
             -webkit-backdrop-filter: blur(18px);
         }
         .text-gradient {
-            color: #059669;
+            background: none !important;
+            -webkit-background-clip: unset !important;
+            -webkit-text-fill-color: #059669 !important;
+            color: #059669 !important;
         }
     </style>
     <script type="module" crossorigin src="./assets/vitrine-CvqtZ6tb.js"></script>
@@ -70,15 +73,15 @@
 
     <!-- Header / Navbar -->
     <header class="glass-nav text-brand-950 sticky top-0 z-50 border-b border-brand-900/5 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20 sm:h-24">
             <!-- Brand Logo -->
-            <a class="flex items-center gap-3 group" href="index.html">
-                <div class="h-12 w-12 md:h-14 md:w-14 rounded-full border border-brand-900/10 flex items-center justify-center overflow-hidden bg-white shadow-sm shrink-0 group-hover:border-brand-600 transition-colors">
-                    <img src="./assets/logo-nGs2Iwky.png" class="h-full w-full object-contain p-0.5" alt="AXIS EVS Logo" />
+            <a class="flex items-center gap-3 sm:gap-4 group" href="index.html">
+                <div class="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full border-2 border-brand-900/15 flex items-center justify-center overflow-hidden bg-white shadow-md shrink-0 group-hover:border-brand-600 transition-all duration-300">
+                    <img src="./assets/logo-nGs2Iwky.png" class="h-full w-full object-contain" alt="AXIS EVS Logo" />
                 </div>
                 <div class="flex flex-col">
-                    <span class="text-xl md:text-2xl font-extrabold tracking-tight text-brand-950 font-display">AXIS EVS</span>
-                    <span class="text-[10px] tracking-widest uppercase font-semibold text-brand-600 -mt-1">Nutrição & Bem-Estar</span>
+                    <span class="text-xl sm:text-2xl md:text-[26px] font-extrabold tracking-tight text-brand-950 font-display leading-tight">AXIS EVS</span>
+                    <span class="text-[10px] sm:text-[11px] md:text-xs tracking-widest uppercase font-semibold text-brand-600">Nutrição & Bem-Estar</span>
                 </div>
             </a>
 
@@ -107,7 +110,7 @@
                     Acompanhamento Personalizado
                 </div>
                 <h1 class="font-display text-brand-950 font-bold text-3.5xl sm:text-5xl">
-                    Jornadas & Desafios de <span class="text-gradient italic">Transformação</span>
+                    Jornadas & Desafios de <span class="text-brand-600 italic" style="color: #059669; background: none; -webkit-text-fill-color: #059669;">Transformação</span>
                 </h1>
                 <p class="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
                     Escolha o plano ideal para atingir seus objetivos de forma sustentável, com suporte diário, avaliações corporais e refeições equilibradas.
@@ -136,12 +139,12 @@
     <!-- Footer -->
     <footer class="bg-brand-950 text-white font-sans text-sm border-t border-brand-900 py-10 mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-3">
-                <div class="h-10 w-10 rounded-full border border-white/20 flex items-center justify-center overflow-hidden bg-white shrink-0">
-                    <img src="./assets/logo-nGs2Iwky.png" class="h-full w-full object-contain p-0.5" alt="AXIS EVS Logo" />
+            <div class="flex items-center gap-3 sm:gap-4">
+                <div class="h-14 w-14 sm:h-16 sm:w-16 rounded-full border-2 border-white/30 flex items-center justify-center overflow-hidden bg-white shadow-md shrink-0">
+                    <img src="./assets/logo-nGs2Iwky.png" class="h-full w-full object-contain" alt="AXIS EVS Logo" />
                 </div>
                 <div>
-                    <span class="font-display font-bold text-lg text-white">AXIS EVS</span>
+                    <span class="font-display font-bold text-lg sm:text-xl text-white">AXIS EVS</span>
                     <p class="text-xs text-emerald-300/80">Espaço de Vida Saudável — Satélite</p>
                 </div>
             </div>
